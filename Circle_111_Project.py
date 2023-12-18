@@ -1,4 +1,4 @@
-## Plotting with Matplotlib in Python
+## Plotting with Matplotlib in Python 
 '''
 Data visualization is an essential skill for all data analysts and Matplotlib is one of the most popular libraries for creating visualizations. Matplotlib is a powerful and very popular library used for creating static, interactive, and publication-quality visualizations. 
 
