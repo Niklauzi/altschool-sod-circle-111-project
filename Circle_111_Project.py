@@ -157,6 +157,18 @@ top5_players.plot(x="Name", y=["Acceleration", "Aggression", "Agility", "Balance
         kind="bar", ylabel='Skills', title="Comparing the Players' skills", figsize=(10, 5))
 plt.show()
 
+#### A Verical Bar chart showing names and acceleration of players
+
+namee = top5_players['Name']
+acceleration = (top5_players['Acceleration'])
+plt.figure(figsize=(14, 6))
+plt.bar(namee, agility, color='skyblue')
+plt.xlabel('Player Names')
+plt.ylabel('Acceleration')
+plt.title('Player SPeed in FIFA')
+plt.xticks(rotation=90)
+plt.show()
+
 
 #### Horizontal Bar chart
 
@@ -212,6 +224,15 @@ plt.pie() function is used to create a pie chart using matplotlib in Python, thi
 ##### Here's an example of creating a Pie Chart:
 
 
+
+# Combine player names and speeds for the labels
+labels = [f'{name} ({speed})' for name, speed in zip(namee, agility)]
+
+# Plotting the pie chart
+plt.figure(figsize=(10, 10))
+plt.pie(agility, labels=labels, autopct='%1.1f%%', startangle=140, colors=plt.cm.Paired.colors)
+plt.title('Distribution of Player Names and Acceleration in FIFA')
+plt.show()
 
 
 
