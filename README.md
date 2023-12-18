@@ -1,5 +1,3 @@
-# altschool-sod-circle-111-project
+# Circle-111-Project
 
-I am visualising the data in fifa.csv file using various matplotlib and pandas features
-
-Note: The package we are interested in is the matplotlib package.
+I have added the description of each plot type in matplotlib and also added a horizontal bar chart.
